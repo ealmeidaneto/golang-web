@@ -1,4 +1,4 @@
-# Docker - Helm 
+# Golang - Docker - Helm 
 
 This repo contains the application part. It is composed of the golang web application and the Helm chart to deploy the container.
 
