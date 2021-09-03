@@ -7,6 +7,6 @@ RUN  go build -o ./web
 # generate clean, final image for end users
 FROM alpine:3.14.2
 COPY --from=builder /go/src/app/web .
-
+EXPOSE 8080
 # executable
 CMD [ "./web" ]
