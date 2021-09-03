@@ -26,8 +26,8 @@ jobs:
           echo 'EKS_CLUSTER=eks-cluster-golang-web-task' >> $GITHUB_ENV
           echo 'REGION=eu-west-1' >> $GITHUB_ENV
 
-      -name: Check Binaries
-       run: ./helpers/check-bin.sh
+      - name: Check Binaries
+        run: ./helpers/check-bin.sh
 
       - name: Connect to EKS Cluster
         run: ./helpers/connect-eks.sh
