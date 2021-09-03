@@ -5,6 +5,9 @@ on:
     workflows: ["BUILD_AND_PUSH"]
     types:
       - completed
+  push:
+    paths:
+    - 'golang-web-chart/values.yaml'
 
 jobs:
   DEPLOY_GOLANG_CHART:
